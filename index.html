@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smiley</title>
+</head>
+<body>
+	<center>
+			<canvas id="myCanvas" width="500" height="500" style="border:1px solid red; background-color: yellow;"></canvas>
+	</center>
+</body>
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(250, 250, 150, 0, 2*Math.PI);
+	ctx.stroke();
+
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(180, 200, 10, 0, 2*Math.PI);
+	ctx.fill();
+
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(320, 200, 10, 0, 2*Math.PI);
+	ctx.fill();
+
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(250, 250, 100, 0.7, .8*Math.PI);
+	ctx.stroke();
+
+	ctx.moveTo(250,260);
+	ctx.lineTo(250,225);
+	ctx.stroke();
+</script>
+</html>
